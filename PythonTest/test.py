@@ -14,6 +14,7 @@ def sumOfListNumbers(someList):
         index+=num
     return index
 print(sumOfListNumbers((1,2,3,6)))
+#Assertions to make sure that the values are correct
 assert sumOfListNumbers(numbers) == 12
 assert mult(3) == 9
 assert add(1,3) == 4
