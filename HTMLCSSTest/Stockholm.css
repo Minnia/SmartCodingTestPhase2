@@ -1,0 +1,150 @@
+body {
+  margin: 0px;
+  font-family: "Istok Web", sans-serif;
+}
+
+h1 {
+  margin: 0px;
+}
+
+h2 {
+  background: rgb(176, 176, 248);
+  color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+ul > li {
+  list-style: none;
+  margin: 8px;
+}
+
+div > li {
+  list-style: none;
+}
+
+input {
+  height: 20px;
+}
+
+footer {
+  list-style: none;
+}
+
+div > li {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.divForAll {
+  margin: 0px 20px;
+}
+
+.nestedDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gridsystem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-auto-flow: column;
+  grid-gap: 16px;
+  border: 1px solid black;
+  padding: 0px 8px;
+  align-items: center;
+}
+
+div:nth-child(5) {
+  background: rgba(245, 243, 244);
+}
+
+.textblock {
+  display: block;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  background: lightblue;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.menu {
+  margin: 0px 50px;
+}
+.menu > li {
+  text-align: left;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: yellow;
+  padding: 8px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#linkbar {
+  background: lightblue;
+  margin: 0px 0px 20px 0px;
+}
+
+#linksTop:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#agenda2030 {
+  width: 100%;
+  align-self: center;
+}
+
+#Sthlm {
+  height: 120px;
+}
+
+#email {
+  color: blue;
+  text-decoration: underline;
+}
+
+#forbiddenParking {
+  width: 100%;
+  align-content: center;
+  align-self: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .gridsystem {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .gridsystem {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .gridsystem {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
